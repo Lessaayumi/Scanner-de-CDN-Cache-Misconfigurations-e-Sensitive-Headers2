@@ -1,7 +1,24 @@
-io no terminal\
--   ✔️ Envio opcional por e-mail (SMTP)\
--   ✔️ Container Docker pronto para uso\
--   ✔️ Publicado no Docker Hub:\
+📌 CDN / Cache Misconfiguration & Sensitive Headers Scanner
+
+Este projeto realiza a validação de headers de segurança (CSP, HSTS, X-Frame-Options, entre outros), identifica caching inseguro, verifica cookies armazenados em cache e gera recomendações automáticas.
+
+Também suporta execução via Docker, com envio opcional de e-mail dos resultados.
+
+🧭 Funcionalidades
+
+✔️ Validação de headers de segurança (CSP, HSTS, XFO, XSS-Protection etc.)
+
+✔️ Identificação de misconfiguração em CDN/Cache
+
+✔️ Verificação de cookies que foram indevidamente armazenados em cache
+
+✔️ Geração de relatório no terminal
+
+✔️ Envio opcional por e-mail (SMTP)
+
+✔️ Container Docker pronto para uso
+
+✔️ Publicado no Docker Hub:
     **`lessaayumi/cdn-cache-scanner:1.0`**
 
 ------------------------------------------------------------------------
