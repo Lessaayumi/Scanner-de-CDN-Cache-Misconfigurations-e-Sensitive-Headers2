@@ -1,2 +1,150 @@
-# Scanner-de-CDN-Cache-Misconfigurations-e-Sensitive-Headers2
-echo "# Scanner-de-CDN-Cache-Misconfigurations-e-Sensitive-Headers" >> README.md git init git add README.md git commit -m "first commit" git branch -M main git remote add origin https://github.com/Lessaayumi/Scanner-de-CDN-Cache-Misconfigurations-e-Sensitive-Headers.git git push -u origin main
+io no terminal\
+-   ✔️ Envio opcional por e-mail (SMTP)\
+-   ✔️ Container Docker pronto para uso\
+-   ✔️ Publicado no Docker Hub:\
+    **`lessaayumi/cdn-cache-scanner:1.0`**
+
+------------------------------------------------------------------------
+
+## 📂 **Estrutura do Projeto**
+
+    meu-scanner-cdn/
+    │── scanner.py
+    │── Dockerfile
+    │── requirements.txt
+    │── README.md
+
+------------------------------------------------------------------------
+
+## 🚀 **Como Executar Localmente (sem Docker)**
+
+``` bash
+python3 scanner.py
+```
+
+Para enviar relatório por e-mail, defina:
+
+``` bash
+export RECIPIENT="exemplo@email.com"
+export SMTP_HOST="smtp.exemplo.com"
+export SMTP_PORT=587
+export SMTP_USER="usuario"
+export SMTP_PASS="senha"# 📌 **CDN / Cache Misconfiguration & Sensitive Headers Scanner**
+
+Este projeto realiza a validação de **headers de segurança** (CSP, HSTS,
+X-Frame-Options, entre outros), identifica **caching inseguro**,
+verifica **cookies armazenados em cache** e gera recomendações
+automáticas.
+
+Também suporta **execução via Docker**, com envio opcional de e-mail dos
+resultados.
+
+------------------------------------------------------------------------
+
+## 🧭 **Funcionalidades**
+
+-   ✔️ Validação de headers de segurança (CSP, HSTS, XFO, XSS-Protection
+    etc.)\
+-   ✔️ Identificação de misconfiguração em CDN/Cache\
+-   ✔️ Verificação de cookies que foram indevidamente armazenados em
+    cache\
+-   ✔️ Geração de relatór
+```
+
+------------------------------------------------------------------------
+
+## 🐳 **Executando com Docker**
+
+### 1️⃣ Build da imagem
+
+``` bash
+docker build -t cdn-cache-scanner:1.0 .
+```
+
+### 2️⃣ Execução simples
+
+``` bash
+docker run --rm cdn-cache-scanner:1.0
+```
+
+------------------------------------------------------------------------
+
+## 📧 **Execução com envio por e-mail**
+
+``` bash
+docker run --rm \
+  -e RECIPIENT="seuemail@teste.com" \
+  -e SMTP_HOST="smtp.com" \
+  -e SMTP_PORT=587 \
+  -e SMTP_USER="usuario" \
+  -e SMTP_PASS="senha" \
+  cdn-cache-scanner:1.0
+```
+
+------------------------------------------------------------------------
+
+## 🌐 **Login no Docker Hub**
+
+``` bash
+docker login
+```
+
+Autenticação gerou:
+
+    USING WEB-BASED LOGIN
+    Your one-time device confirmation code is: VVWX-FKQW
+    Login Succeeded
+
+Verificação:
+
+``` bash
+docker info | grep Username
+```
+
+------------------------------------------------------------------------
+
+## 📤 **Publicação no Docker Hub**
+
+``` bash
+docker push lessaayumi/cdn-cache-scanner:1.0
+```
+
+------------------------------------------------------------------------
+
+## 📦 **Usando a Imagem do Docker Hub**
+
+``` bash
+docker pull lessaayumi/cdn-cache-scanner:1.0
+docker run --rm lessaayumi/cdn-cache-scanner:1.0
+```
+
+------------------------------------------------------------------------
+
+## 🛠️ **Comandos úteis utilizados**
+
+``` bash
+docker build -t cdn-cache-scanner:1.0 .
+docker run --rm cdn-cache-scanner:1.0
+docker login
+docker info | grep Username
+docker tag cdn-cache-scanner:1.0 lessaayumi/cdn-cache-scanner:1.0
+docker push lessaayumi/cdn-cache-scanner:1.0
+```
+
+------------------------------------------------------------------------
+
+## 📝 **Melhorias Futuras**
+
+-   Implementar análise paralela para múltiplas URLs\
+-   Exportação de relatório em PDF/HTML\
+-   Dashboard Web para visualização\
+-   Integração com CI/CD
+
+------------------------------------------------------------------------
+
+## 👩🏻‍💻 **Autora**
+
+**Alessandra Lessa**\
+Segurança da Informação • Pesquisadora em ML aplicado à detecção de
+ataques\
+Docker Hub: *lessaayumi*
