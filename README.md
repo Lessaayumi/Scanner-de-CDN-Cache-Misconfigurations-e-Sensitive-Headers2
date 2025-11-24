@@ -297,7 +297,7 @@ docker login
 Aqui irá abrir um aba no browser e será necessário o login no DockerHub para a publicação do projeto.
 
 ``` bash
-docker build -t lessaayumi/cdn-cache-scanner:1.0 .
+docker build -t seuusuario/cdn-cache-scanner:1.0 .
 ```
 
 ``` bash
