@@ -107,7 +107,7 @@ docker push lessaayumi/cdn-cache-scanner:1.0
 
 ## 👩🏻‍💻 **Autora**
 
-**Alessandra Lessa**\
+**Alessandra Lessa** and **Taynara Castilho**\
 Segurança da Informação • Pesquisadora em ML aplicado à detecção de
 ataques\
 Docker Hub: *lessaayumi*
