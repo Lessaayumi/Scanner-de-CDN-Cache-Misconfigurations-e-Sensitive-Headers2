@@ -16,43 +16,6 @@ io no terminal\
 
 ------------------------------------------------------------------------
 
-## 🚀 **Como Executar Localmente (sem Docker)**
-
-``` bash
-python3 scanner.py
-```
-
-Para enviar relatório por e-mail, defina:
-
-``` bash
-export RECIPIENT="exemplo@email.com"
-export SMTP_HOST="smtp.exemplo.com"
-export SMTP_PORT=587
-export SMTP_USER="usuario"
-export SMTP_PASS="senha"# 📌 **CDN / Cache Misconfiguration & Sensitive Headers Scanner**
-
-Este projeto realiza a validação de **headers de segurança** (CSP, HSTS,
-X-Frame-Options, entre outros), identifica **caching inseguro**,
-verifica **cookies armazenados em cache** e gera recomendações
-automáticas.
-
-Também suporta **execução via Docker**, com envio opcional de e-mail dos
-resultados.
-
-------------------------------------------------------------------------
-
-## 🧭 **Funcionalidades**
-
--   ✔️ Validação de headers de segurança (CSP, HSTS, XFO, XSS-Protection
-    etc.)\
--   ✔️ Identificação de misconfiguração em CDN/Cache\
--   ✔️ Verificação de cookies que foram indevidamente armazenados em
-    cache\
--   ✔️ Geração de relatór
-```
-
-------------------------------------------------------------------------
-
 ## 🐳 **Executando com Docker**
 
 ### 1️⃣ Build da imagem
