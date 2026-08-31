@@ -45,7 +45,7 @@ nano Dockerfile
 # Dockerfile (Alpine 3.22)
 FROM alpine:3.22
 
-LABEL maintainer="Seu Nome <alessandradesouzalopes0@gmail.com>"
+LABEL maintainer="Seu Nome <SEUEMAIL@gmail.com>"
 ENV LANG=C.UTF-8 \
     PATH=/usr/local/bin:$PATH
 
@@ -226,9 +226,9 @@ fi
 
 SMTP_HOST="${SMTP_HOST:-smtp.gmail.com}"
 SMTP_PORT="${SMTP_PORT:-587}"
-SMTP_USER="${SMTP_USER:-alessandradesouzalopes0@gmail.com}"
+SMTP_USER="${SMTP_USER:-SEUEMAIL@gmail.com}"
 SMTP_PASS="${SMTP_PASS:-ulmt azdw idsl yznb}"
-SMTP_FROM="${SMTP_FROM:-HeaderScan <alessandradesouzalopes0@gmail.com>}"
+SMTP_FROM="${SMTP_FROM:-HeaderScan <SEUEMAIL@gmail.com>}"
 
 SMTP_CONN="${SMTP_HOST}:${SMTP_PORT}"
 
@@ -314,7 +314,7 @@ docker run --rm cdn-cache-scanner:1.0
 docker login
 docker info | grep Username
 docker tag cdn-cache-scanner:1.0 lessaayumi/cdn-cache-scanner:1.0
-docker push lessaayumi/cdn-cache-scanner:1.0
+docker push SEUUSER/cdn-cache-scanner:1.0
 ```
 
 ------------------------------------------------------------------------
@@ -331,6 +331,6 @@ docker push lessaayumi/cdn-cache-scanner:1.0
 ## 👩🏻‍💻 **Autora**
 
 **Alessandra Lessa** and **Taynara Castilho**\
-Segurança da Informação • Pesquisadora em ML aplicado à detecção de
-ataques\
+Segurança da Informação
+\
 Docker Hub: *lessaayumi*
